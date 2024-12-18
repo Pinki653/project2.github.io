@@ -1,0 +1,116 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    background: #f0f0f0 ;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20220819/pngtree-composite-image-of-trigonometry-plank-empty-digital-photo-image_19593076.jpg");
+}
+
+/* Main heading */
+h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Input field styling */
+#input {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    border-radius: 10px;
+    border: 2px solid #333;
+    padding: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#input:focus {
+    border-color: purple;
+}
+
+/* Button styling */
+.cal {
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    background-color: purple;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cal:hover {
+    background-color: #5e2a87;
+    transform: scale(1.05);
+}
+
+/* Output section styling */
+.output {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    #input {
+        font-size: 16px;
+    }
+
+    .cal {
+        font-size: 16px;
+    }
+
+    .output {
+        font-size: 16px;
+    }
+}
